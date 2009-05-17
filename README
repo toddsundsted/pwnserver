@@ -1,0 +1,45 @@
+Pwnserver gets your data.
+Copyright (C) 2009 Todd Sundsted
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or (at
+your option) any later version.
+
+This program is distributed in the hope that it will be useful, but
+WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+Installation
+============
+
+Pwnserver is pre-pre-Alpha software.  As such, it expects a lot from
+its users.  This document should enable a user who is both technically
+proficient and persistent to get pwnserver running.
+
+Caveats
+-------
+
+ 1) I've only tested this on Ubuntu 8.04 and CentOS 5.2.
+
+Prerequisites
+-------------
+
+ 1) A working installation of Ruby.
+ 2) A working installation of SQLite3.
+ 3) The sqlite3-ruby gem.
+
+Installation Steps
+------------------
+
+Pwnserver expects the following directories to exist:
+
+./db     contains the SQLite3 database
+./data   contains the pwned data
+./log    contains the logs
+
+Create them.
