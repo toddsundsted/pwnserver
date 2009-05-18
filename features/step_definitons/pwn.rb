@@ -365,7 +365,7 @@ When /^I pwn twitter ?a?g?a?i?n?$/ do
 end
 
 Then /^I pwn page (\d+)$/ do |page|
-  @zero.pwn_stats.collect{|s|s[:page]}.should(be_include(page.to_i))
+  @zero.pwn_stats.collect{|s|s[:page]}.should include(page.to_i)
 end
 
 Then /^I collect (\d+) new tweets? from page (\d+)$/ do |tweetc, page|
